@@ -170,7 +170,6 @@ main section p, ul {
 
 .button {
     text-align: center;
-    width: 20vw;
     padding: 12px;
     text-decoration: none;
     color: white;
@@ -386,4 +385,84 @@ footer {
 
 .footer-bottom-column .footer-bottom-element a:hover {
     color: orange;
+}
+
+
+/* адаптив (mobile) */
+@media screen and (max-width: 768px) {
+
+    .header-logo a {
+        width: 150px;
+        height: 70px;
+    }
+
+    .header-icons a {
+        width: 20px;
+        height: 25px;
+    }
+
+    .overlay p{
+        font-size: 10pt;
+    }
+
+    .overlay h1{
+        font-size: 14pt;
+    }
+
+    .cards-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-item {
+        width: 90%;
+    }
+
+    .side {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .left-side {
+        width: 100%;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+
+    .companies {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #apply form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #apply input {
+        font-size: 10pt;
+        width: 240px;
+    }
+
+    .footer-contacts .footer-phone{
+        font-size: 14pt
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-bottom-right {
+        padding-left: 0;
+    }
+
+    .footer-bottom-column {
+        padding-right: 0;
+    }
+    
 }
