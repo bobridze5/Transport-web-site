@@ -566,15 +566,16 @@ footer {
         font-size: 14pt;
     }
 
-    .cards-list {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
-
     .card-item {
         padding: 0;
-        width: 100%;
+    }
+
+    .card-item h2 {
+        font-size: 12pt;
+    }
+
+    .card-item p {
+        font-size: 10pt;
     }
 
     .side {
@@ -583,13 +584,14 @@ footer {
         gap: 20px;
     }
 
-    .left-side {
+    .side .left-side {
         width: 100%;
     }
 
-    .right-side {
+    .side .right-side {
         width: 100%;
     }
+    
 
     .companies {
         grid-template-columns: repeat(2, 1fr);
